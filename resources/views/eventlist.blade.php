@@ -2,13 +2,13 @@
     <table id="displayevent" data-order='[[ 3, "desc" ]]' class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="97%">
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Start date</th>
-                <th>End date</th>
-                <th>Creation Date</th>
-                <th>Creator</th>
-                <th>Participants</th>
-                <th>Action</th>
+                <th>Titre de l'événement</th>
+                <th>Date de debut</th>
+                <th>Date de fin</th>
+                <th>Date de création </th>
+                <th>Createur de l'événement</th>
+                <th>Intervenants</th>
+                <th>Descrption</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -35,11 +35,11 @@
                 <td>Author</td>
                 <td>{{ $event->participants }}</td>
                 <td>
-                    <button class="text-gray-300 hover:text-gray-700 bg-indigo-500 rounded-full px-2 py-2" onclick="showDescription('{{ $loop->iteration }}')">Show description </button>
+                    <button class="text-gray-300 hover:text-gray-700 bg-indigo-500 rounded-full px-2 py-2" onclick="showDescription('{{ $loop->iteration }}')"> description </button>
                 </td>
                 <td>
-                    <button class="btn btn-warning" onclick="modifyEvent('{{ $loop->iteration }}')">Modify </button>
-                    <button class="btn btn-danger" onclick="confifmationDeleteEvent('{{ $loop->iteration }}')"> Delete</button>
+                    <button class="btn btn-warning" onclick="modifyEvent('{{ $loop->iteration }}')">Modifier </button>
+                    <button class="btn btn-danger" onclick="confifmationDeleteEvent('{{ $loop->iteration }}')"> Supprimer</button>
                 </td>
             </tr>
         @endforeach
@@ -49,9 +49,8 @@
 <div class="py-16">
     <div class="text-center">
       <p class="text-sm font-semibold text-indigo-600 uppercase tracking-wide"></p>
-      <h1 class="mt-2 text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">No event for the moment 😕
-        .</h1>
-      <p class="mt-2 text-base text-gray-500">You can create a new event.</p>
+      <h1 class="mt-2 text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">Aucun événement n'a été créé pour le moment...</h1>
+      <p class="mt-2 text-base text-gray-500">Bien vouloir créer un événement.</p>
     </div>
 @endif
 

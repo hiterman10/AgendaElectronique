@@ -114,8 +114,8 @@
                         <p> Voulez-vous supprimer definitivement cet événement ?</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" id="save_form" onclick="deleteEvent();" class="bg-red-400 hover:bg-red-600 rounded-full px-2 py-2 font-bold text-white">Enregistrer</button>
-                        <button type="button" class="bg-gray-400 rounded-full px-2 py-2 font-bold text-white" data-dismiss="modal">Annuler</button>
+                        <button type="button" id="save_form" onclick="deleteEvent();" class="bg-red-400 hover:bg-red-600 rounded-full px-2 py-2 font-bold text-white">Oui</button>
+                        <button type="button" class="bg-gray-400 rounded-full px-2 py-2 font-bold text-white" data-dismiss="modal">Non</button>
                     </div>
                 </div>
             </div>
