@@ -14,17 +14,12 @@ use App\Http\Controllers\AgendaController;
 |
 */
 
-/* Route::get('/', function () {
-    return view('welcome');
-}); */
-
 Route::get('/', function () {
     return view('home');
 });
 
-//Création d'un evement
+//Route pour la creation d'un evement
 
 Route::post('/event/create', [AgendaController::class, 'createEvent']);
 Route::get('/event/display', [AgendaController::class, 'displayEvent']);
-Route::get('/event/delete', [AgendaController::class, 'deleteEvent']);
-Route::get('/event/addparticipants', [AgendaController::class, 'addParticipant']);
+Route::post('/event/delete', [AgendaController::class, 'deleteEvent']);

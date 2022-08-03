@@ -12,5 +12,5 @@ class Event extends Model
     public $timestamps = false;
     public $incrementing = false;
     protected $keyType = 'string';
-    protected $fillable = ['id', 'title', 'start', 'end',];
+    protected $fillable = ['id', 'title','description', 'start', 'end',];
 }

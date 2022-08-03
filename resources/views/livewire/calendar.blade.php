@@ -67,6 +67,7 @@
                 center: 'title',
                 right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
             },
+            
             locale: '{{ config('app.locale') }}',
             events: JSON.parse(@this.events),
             
@@ -79,11 +80,13 @@
             selectable: true,
             select: arg => {
                 const title = prompt('Titre :');
+                const description = prompt('Description :');
                 const id = create_UUID();
                 if (title) {
                     calendar.addEvent({
                         id: id,
-                        title: title,   
+                        title: title,
+                        description: description,   
                         start: arg.start,
                         end: arg.end,
                         allDay: arg.allDay

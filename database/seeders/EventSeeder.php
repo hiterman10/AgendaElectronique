@@ -19,18 +19,21 @@ class EventSeeder extends Seeder
             [
                 'id' => Str::uuid(),
                 'title' => 'Evenement 1',
+                'description' => 'description 1',
                 'start' => '2021-04-02',
                 'end' => null
             ],
             [
                 'id' => Str::uuid(),
                 'title' => 'Evenement 2',
+                'description' => 'description 2',
                 'start' => '2021-04-10T08:00:00',
                 'end' => '2021-04-10T16:00:00'
             ],
             [
                 'id' => Str::uuid(),
                 'title' => 'Evenement 3',
+                'description' => 'description 3',
                 'start' => '2021-04-20',
                 'end' => '2021-04-22'
             ],
